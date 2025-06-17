@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero";
+import Services from "../components/Services";
+import Testimonials from "../components/Testimonials";
+import UniversityPartners from "../components/UniversityPartners";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+    title="Rive Education - Your Gateway to Global Education"
+    description="Expert education consulting services for university admissions, visa assistance, test preparation, and career guidance. Transform your educational dreams into reality with personalized support."
+    keywords="education consulting, university admissions, study abroad, visa assistance, test preparation, career counseling"
+>
+    <Header />
+
+    <main id="main-content">
+        <Hero client:load />
+        <Services client:load />
+        <Testimonials client:load />
+        <UniversityPartners client:load />
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-primary-600 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-6">
+                    Ready to Start Your Educational Journey?
+                </h2>
+                <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                    Get personalized guidance from our expert consultants and
+                    take the first step toward your academic success.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                        href="/contact"
+                        class="inline-flex items-center px-8 py-4 bg-accent-500 text-white font-semibold rounded-lg hover:bg-accent-600 transition-all duration-200 transform hover:scale-105"
+                    >
+                        Schedule Free Consultation
+                    </a>
+                    <a
+                        href="/services"
+                        class="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-600 transition-all duration-200"
+                    >
+                        Explore Our Services
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</Layout>
