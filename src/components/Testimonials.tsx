@@ -11,7 +11,7 @@ const Testimonials: React.FC = () => {
       image:
         "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=300",
       quote:
-        "Rive Education made my dream of studying at Harvard a reality. Their personalized guidance and expert advice were invaluable throughout the entire application process.",
+        "Rivil International made my dream of studying at Harvard a reality. Their personalized guidance and expert advice were invaluable throughout the entire application process.",
       rating: 5,
     },
     {

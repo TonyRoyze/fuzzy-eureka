@@ -1,21 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import ImageCarousel from "../components/ImageCarousel";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import UniversityPartners from "../components/UniversityPartners";
+import WhatsAppButton from "../components/WhatsAppButton";
 import Footer from "../components/Footer.astro";
 ---
 
 <Layout
-    title="Rive Education - Your Gateway to Global Education"
+    title="Rivil International - Your Gateway to Global Education"
     description="Expert education consulting services for university admissions, visa assistance, test preparation, and career guidance. Transform your educational dreams into reality with personalized support."
     keywords="education consulting, university admissions, study abroad, visa assistance, test preparation, career counseling"
 >
     <Header />
 
     <main id="main-content">
+        <ImageCarousel client:load />
         <Hero client:load />
         <Services client:load />
         <Testimonials client:load />
@@ -48,6 +51,6 @@ import Footer from "../components/Footer.astro";
             </div>
         </section>
     </main>
-
+    <WhatsAppButton client:load />
     <Footer />
 </Layout>
