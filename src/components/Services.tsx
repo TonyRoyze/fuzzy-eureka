@@ -1,37 +1,63 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { GraduationCap, FileText, Brain, Briefcase, ArrowRight } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  GraduationCap,
+  FileText,
+  Brain,
+  Briefcase,
+  ArrowRight,
+} from "lucide-react";
 
 const Services: React.FC = () => {
   const services = [
     {
       icon: GraduationCap,
-      title: 'University Admissions',
-      description: 'Expert guidance through the entire application process, from university selection to application submission.',
-      features: ['Application Strategy', 'Essay Writing Support', 'Interview Preparation'],
-      href: '/services/admissions'
+      title: "University Admissions",
+      description:
+        "Expert guidance through the entire application process, from university selection to application submission.",
+      features: [
+        "Application Strategy",
+        "Essay Writing Support",
+        "Interview Preparation",
+      ],
+      href: "/services/admissions",
     },
     {
       icon: FileText,
-      title: 'Visa Assistance',
-      description: 'Complete support for student visa applications and documentation for studying abroad.',
-      features: ['Document Preparation', 'Visa Interview Prep', 'Legal Compliance'],
-      href: '/services/visa'
+      title: "Visa Assistance",
+      description:
+        "Complete support for student visa applications and documentation for studying abroad.",
+      features: [
+        "Document Preparation",
+        "Visa Interview Prep",
+        "Legal Compliance",
+      ],
+      href: "/services/visa",
     },
     {
       icon: Brain,
-      title: 'Test Preparation',
-      description: 'Comprehensive coaching for standardized tests including SAT, GRE, GMAT, IELTS, and TOEFL.',
-      features: ['Personalized Study Plans', 'Practice Tests', 'Score Improvement'],
-      href: '/services/test-prep'
+      title: "Test Preparation",
+      description:
+        "Comprehensive coaching for standardized tests including SAT, GRE, GMAT, IELTS, and TOEFL.",
+      features: [
+        "Personalized Study Plans",
+        "Practice Tests",
+        "Score Improvement",
+      ],
+      href: "/services/test-prep",
     },
     {
       icon: Briefcase,
-      title: 'Career Counseling',
-      description: 'Professional guidance to align your academic choices with long-term career goals.',
-      features: ['Career Assessment', 'Industry Insights', 'Networking Support'],
-      href: '/services/career'
-    }
+      title: "Career Counseling",
+      description:
+        "Professional guidance to align your academic choices with long-term career goals.",
+      features: [
+        "Career Assessment",
+        "Industry Insights",
+        "Networking Support",
+      ],
+      href: "/services/career",
+    },
   ];
 
   const containerVariants = {
@@ -39,9 +65,9 @@ const Services: React.FC = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -50,9 +76,9 @@ const Services: React.FC = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6
-      }
-    }
+        duration: 0.6,
+      },
+    },
   };
 
   return (
@@ -75,7 +101,8 @@ const Services: React.FC = () => {
             viewport={{ once: true }}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Comprehensive educational consulting services designed to help you achieve your academic goals and career aspirations.
+            Comprehensive educational consulting services designed to help you
+            achieve your academic goals and career aspirations.
           </motion.p>
         </div>
 
@@ -95,27 +122,30 @@ const Services: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-primary-100 rounded-lg mb-6 group-hover:bg-primary-200 transition-colors duration-300">
                 <service.icon className="h-8 w-8 text-primary-600" />
               </div>
-              
+
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 {service.title}
               </h3>
-              
+
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {service.description}
               </p>
-              
+
               <ul className="space-y-2 mb-6">
                 {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center text-sm text-gray-500">
+                  <li
+                    key={feature}
+                    className="flex items-center text-sm text-gray-500"
+                  >
                     <div className="w-1.5 h-1.5 bg-primary-400 rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
               </ul>
-              
+
               <a
                 href={service.href}
-                className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors duration-200"
+                className="inline-flex items-center text-primary-500 font-medium hover:text-primary-700 transition-colors duration-200"
               >
                 Learn More
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />

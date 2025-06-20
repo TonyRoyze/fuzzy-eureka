@@ -5,33 +5,33 @@ import { Star, Quote } from "lucide-react";
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Dilhara Wijesiri",
       university: "Harvard University",
       program: "MBA",
       image:
         "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=300",
       quote:
-        "Rivil International made my dream of studying at Harvard a reality. Their personalized guidance and expert advice were invaluable throughout the entire application process.",
+        "Rivil International is one of the best Educational consultants in Sri Lanka. I have had the best experience with them from day one. My Consultant Vihanga Deneth handled my case professionally, everything was explained well in advance, and executed perfectly.",
       rating: 5,
     },
     {
-      name: "Michael Chen",
+      name: "Gayan Wijesuriya",
       university: "Stanford University",
       program: "Computer Science",
       image:
         "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=300",
       quote:
-        "The team helped me navigate the complex admission requirements and secure a scholarship. I could not have done it without their expertise and support.",
+        "I am grateful to Rivil International for their professional and efficient handling of my New Zealand student visa application. Their expertise, clear guidance, and attention to detail were key to the successful outcome. I highly recommend their services to anyone seeking trusted visa consultancy support.",
       rating: 5,
     },
     {
-      name: "Emily Rodriguez",
+      name: "Pushpani Wanniarachchi",
       university: "MIT",
       program: "Engineering",
       image:
         "https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=300",
       quote:
-        "From test preparation to visa assistance, they guided me every step of the way. Now I am pursuing my engineering degree at my dream university.",
+        "Rivil International is one of the best Educational consultants in Sri Lanka. I have had the best experience with them from day one. My Consultant Vihanga Deneth handled my case professionally, everything was explained well in advance, and executed perfectly.",
       rating: 5,
     },
   ];

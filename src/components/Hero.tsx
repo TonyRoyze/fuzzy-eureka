@@ -1,16 +1,16 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Award, Users, Globe } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Award, Users, Globe } from "lucide-react";
 
 const Hero: React.FC = () => {
   const stats = [
-    { icon: Users, label: 'Students Helped', value: '5,000+' },
-    { icon: Globe, label: 'Universities', value: '200+' },
-    { icon: Award, label: 'Success Rate', value: '95%' },
+    { icon: Users, label: "Students Helped", value: "5,000+" },
+    { icon: Globe, label: "Universities", value: "200+" },
+    { icon: Award, label: "Success Rate", value: "95%" },
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
+    <section className="relative bg-gradient-primary-900 text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.1%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%224%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
@@ -30,8 +30,9 @@ const Hero: React.FC = () => {
                 <span className="text-accent-400 block">Global Education</span>
               </h1>
               <p className="text-xl text-blue-100 mt-6 leading-relaxed">
-                Expert guidance for university admissions, visa assistance, and academic success. 
-                Transform your educational dreams into reality with our personalized consulting services.
+                Expert guidance for university admissions, visa assistance, and
+                academic success. Transform your educational dreams into reality
+                with our personalized consulting services.
               </p>
             </motion.div>
 
@@ -43,7 +44,7 @@ const Hero: React.FC = () => {
             >
               <a
                 href="/contact"
-                className="inline-flex items-center px-8 py-4 bg-accent-500 text-white font-semibold rounded-lg hover:bg-accent-600 transition-all duration-200 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-accent-900 text-white font-semibold rounded-lg hover:bg-accent-600 transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
                 Get Free Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -89,7 +90,7 @@ const Hero: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-900/50 to-transparent"></div>
             </div>
-            
+
             {/* Floating Card */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -103,7 +104,9 @@ const Hero: React.FC = () => {
                 </div>
                 <div>
                   <div className="font-semibold">95% Success Rate</div>
-                  <div className="text-sm text-gray-500">University Acceptance</div>
+                  <div className="text-sm text-gray-500">
+                    University Acceptance
+                  </div>
                 </div>
               </div>
             </motion.div>

@@ -43,35 +43,35 @@ const ImageCarousel: React.FC = () => {
       id: 3,
       image:
         "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      title: "Your Success Story",
+      title: "What we do ?",
       subtitle: "Personalized Guidance",
       description:
-        "Join thousands of successful students who achieved their dreams with our expert educational consulting and comprehensive support.",
+        "With more than 21 years of experience in placing thousands of students in various institutions overseas, we understand the challenges faced by those aspiring to study overseas. Keeping in mind the needs of such students, we have designed our processes in a manner that every single task starting from admission to visa to making travel arrangements is smooth and hassle free. Our dedicated team is there to help you with every stage of the process.",
       ctaText: "Start Your Journey",
       ctaLink: "/contact",
     },
-    {
-      id: 4,
-      image:
-        "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      title: "Natural Learning Environment",
-      subtitle: "Inspiring Landscapes",
-      description:
-        "Study surrounded by breathtaking natural beauty that inspires creativity, innovation, and personal growth in your academic journey.",
-      ctaText: "Learn More",
-      ctaLink: "/about",
-    },
-    {
-      id: 5,
-      image:
-        "https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      title: "Expert Consultation",
-      subtitle: "Professional Support",
-      description:
-        "Our experienced team provides comprehensive guidance from application to graduation, ensuring your educational success every step of the way.",
-      ctaText: "Get Consultation",
-      ctaLink: "/contact",
-    },
+    // {
+    //   id: 4,
+    //   image:
+    //     "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    //   title: "Natural Learning Environment",
+    //   subtitle: "Inspiring Landscapes",
+    //   description:
+    //     "Study surrounded by breathtaking natural beauty that inspires creativity, innovation, and personal growth in your academic journey.",
+    //   ctaText: "Learn More",
+    //   ctaLink: "/about",
+    // },
+    // {
+    //   id: 5,
+    //   image:
+    //     "https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    //   title: "Expert Consultation",
+    //   subtitle: "Professional Support",
+    //   description:
+    //     "Our experienced team provides comprehensive guidance from application to graduation, ensuring your educational success every step of the way.",
+    //   ctaText: "Get Consultation",
+    //   ctaLink: "/contact",
+    // },
   ];
 
   useEffect(() => {
@@ -137,7 +137,7 @@ const ImageCarousel: React.FC = () => {
                   className="space-y-6"
                 >
                   <div className="space-y-2">
-                    <p className="text-accent-100 text-lg font-medium tracking-wide uppercase">
+                    <p className="text-secondary-400 text-lg font-medium tracking-wide uppercase">
                       {slides[currentSlide].subtitle}
                     </p>
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -154,7 +154,7 @@ const ImageCarousel: React.FC = () => {
                       href={slides[currentSlide].ctaLink}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all duration-200 shadow-lg"
+                      className="inline-flex items-center px-8 py-4 bg-secondary-900 text-white font-semibold rounded-lg hover:bg-secondary-700 transition-all duration-200 shadow-lg"
                     >
                       {slides[currentSlide].ctaText}
                       <ArrowRight className="ml-2 h-5 w-5" />
